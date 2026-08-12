@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Kairos Intelligent Marketing — The Right Message. The Right Moment. Every Time.</title>
+<title>Kairos — The Right Message. The Right Moment. Every Time.</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
 :root{--gold:#E9A92B;--gold2:#ffcc63;--black:#050505;--ink:#101010;--white:#f6f6f4;--muted:#b6b6b6;--line:rgba(255,255,255,.12);--ease:cubic-bezier(.2,.8,.2,1)}
@@ -86,7 +86,31 @@
   .desktop-nav, nav:not(.mobile-nav-panel) { }
   .mobile-nav-panel { display:flex; }
 }
-</style></head>
+</style>
+<style id="kairos-hero-exact">
+.kairos-hero-title{
+  display:flex !important;
+  flex-direction:column !important;
+  gap:.02em !important;
+  position:relative;
+  z-index:20;
+  color:#fff;
+  font-weight:800;
+  font-size:clamp(2.4rem,6vw,6.8rem);
+  line-height:.94;
+  letter-spacing:-.045em;
+  text-transform:uppercase;
+  max-width:11ch;
+}
+.kairos-hero-title span:nth-child(3){color:#E9A82F;}
+@media (max-width:768px){
+  .kairos-hero-title{
+    font-size:clamp(2rem,12vw,4rem);
+    max-width:10ch;
+  }
+}
+</style>
+</head>
 <body>
 <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Open navigation" aria-expanded="false">
   <span></span>
@@ -101,7 +125,11 @@
 
 <div class="cursorGlow" id="cursorGlow"></div>
 <nav class="nav"><div class="navin container"><a class="logo" href="#top">KAI<span>R</span>OS</a><div class="navlinks"><a href="#about">About</a><a href="#services">Services</a><a href="#why">Why Kairos</a><a href="#contact">Contact</a></div></div></nav>
-<header class="hero" id="top"><div class="photo"></div><div class="heroContent reveal"><div class="eyebrow">Intelligent Marketing & Growth</div><h1>The right <span>message.</span><br>The right moment.</h1><p>Kairos combines data-driven strategy, cutting-edge AI tools and creative excellence to engineer measurable growth across every marketing touchpoint.</p><div class="scroll"><i></i> SCROLL TO EXPLORE</div></div></header>
+<header class="hero" id="top"><div class="photo"></div><div class="heroContent reveal"><div class="eyebrow">Intelligent Marketing & Growth</div><div class="kairos-hero-title" aria-label="The right message. The right moment. Every Time.">
+  <span>THE RIGHT MESSAGE.</span>
+  <span>THE RIGHT MOMENT.</span>
+  <span>EVERY TIME.</span>
+</div><p>Kairos combines data-driven strategy, cutting-edge AI tools and creative excellence to engineer measurable growth across every marketing touchpoint.</p><div class="scroll"><i></i> SCROLL TO EXPLORE</div></div></header>
 <section id="about"><div class="container"><div class="sectionHead reveal"><div><div class="kicker">01 / Who we are</div><h2>Built to<br>engineer growth.</h2></div><p>Egypt's specialized Marketing & Growth Agency for businesses that refuse to be ordinary.</p></div><div class="intro reveal"><div class="introText"><span class="gold">Kairos Intelligent Marketing</span> is built around intelligence, precision and accountability — not vanity metrics.</div><div><p style="color:#aaa;line-height:1.8;font-size:14px">With an active portfolio of <b style="color:#fff">+120 clients</b> across real estate, hospitality, healthcare, education and retail, Kairos operates at a scale and depth unmatched in the Egyptian market.</p><div class="stats"><div class="stat tilt"><b>120<em>+</em></b><span>Active clients</span></div><div class="stat tilt"><b>360<em>°</em></b><span>Marketing coverage</span></div><div class="stat tilt"><b>6</b><span>Specialized divisions</span></div></div></div></div></div></section>
 <section class="services" id="services"><div class="container"><div class="sectionHead reveal"><div><div class="kicker">02 / What we do</div><h2>Full-spectrum<br>marketing.</h2></div><p>Strategy, creative, production, media, analytics and specialized growth — under one roof.</p></div><div class="grid">
 <div class="card tilt reveal"><div class="num">01 — MARKETING 360°</div><h3>Marketing 360°</h3><p>Unified marketing solutions covering strategy, creative, digital and performance.</p><div class="chips"><span class="chip">Brand Strategy</span><span class="chip">Digital</span><span class="chip">Performance</span><span class="chip">SEO</span></div></div>
